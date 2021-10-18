@@ -59,4 +59,11 @@ Once the domain has been analyzed, it is time to think about our layers, followi
 
 For this scenario we have assembled the following layers that can be seen in the diagram.
 
+
 <img src="https://github.com/damiancipolat/Clean-Architecture-Credit-Card-TS/blob/main/doc/diagram_layers.png?raw=true" width="650px" />
+
+#### Layer by layer:
+- **Domain**:In this layer is where we will put the entities, value objects and business rules. 
+- **Application**:Application: This is where functionality really lives, application logic is included.
+- **Interface**: Here we put the communication layer between infrastructure and application.
+- **Infrastructure**: Here we put the part of the system that has contact with the outside, eg: BD, 3rd party libraries, integration with other services, configurations. The idea of ​​this layer is to be able to have contact with this layer through abstractions.
