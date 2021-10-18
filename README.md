@@ -49,3 +49,7 @@ We know that the data we handle on the card are the following:
     opExternal:Card provider metadata;
     icon:string,'pig'
 ```
+#### Data definition:
+With this we can already assemble the first entities of our domain.
+
+<img src="https://github.com/damiancipolat/Clean-Architecture-Credit-Card-TS/blob/main/doc/diagram_domain.png?raw=true" width="150px" />
