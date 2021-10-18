@@ -106,3 +106,22 @@ curl --location --request PATCH 'http://127.0.0.1:8080/card/enable/1' \
     "externalId":"1"
 }'
 ```
+
+## Readings:
+This is just the beginning, of a topic that is gigantic, I recommend that you review some of these links that I collect to put together this project.
+
+https://franiglesias.github.io/ddd-way-domain/
+https://medium.com/geekculture/thoughts-on-domain-driven-design-in-functional-languages-83c43ec518d
+https://github.com/jbuget/nodejs-clean-architecture-app
+https://github.com/joshuaalpuerto/node-ddd-boilerplate
+https://github.com/ricomonster/node-ddd
+https://medium.com/@pererikbergman/repository-design-pattern-e28c0f3e4a30
+https://makingloops.com/why-should-you-use-the-repository-pattern/
+https://medium.com/@cesiztel/repository-pattern-en-laravel-f66fcc9ea492
+https://github.com/jbuget/nodejs-clean-architecture-app/tree/master/lib/interfaces
+https://github.com/joshuaalpuerto/node-ddd-boilerplate
+https://dev.to/vickodev/nodetskeleton-clean-arquitecture-template-project-for-nodejs-gge
+https://blog.octo.com/en/clean-node-part-1/
+https://www.youtube.com/watch?v=4vgSbPzfxok
+https://www.youtube.com/watch?v=VLhdDYaW-uI
+https://www.youtube.com/watch?v=kHyA_lHvJBM&t=311s
