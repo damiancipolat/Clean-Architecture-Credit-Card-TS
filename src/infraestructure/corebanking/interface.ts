@@ -1,9 +1,10 @@
 import {
-    TCardResponse
+    TCardholderAccountResponse,
+    TCardResponse,
 } from './types';
 
 interface ICardRequest{
-    (externalId:string):Promise<any>
+    (externalId:string):Promise<[TCardResponse,TCardholderAccountResponse]>
 };
 
 interface IPauseCard{

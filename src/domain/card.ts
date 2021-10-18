@@ -11,7 +11,7 @@ type TCardDate={
 };
 
 type TCard={
-    id:string;
+    id?:string;
     created_at:string;
     reference:string;
     since:TCardDate;

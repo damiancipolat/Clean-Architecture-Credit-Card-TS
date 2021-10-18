@@ -51,17 +51,20 @@ const createCard = async (cardHolderId:string,externalId:string):Promise<any>=>{
         'ExternalId':externalId
     };
 
-    const response = await axios.post(url,headers,{});
+    const response = await axios.post(url,headers,{});    
     return response.data;
 };
 
 //Process the card request.
-const requestCard:ICardRequest = async (externalId:string):Promise<any>=>{
+const requestCard:ICardRequest = async (externalId:string):Promise<[TCardResponse,TCardholderAccountResponse]>=>{
 
     const cardHolder:TCardholderAccountResponse = await createCardHolder(externalId);
-    const card:TCardResponse = await createCard(cardHolder.cardHolderAccount.id,externalId);
+    console.log('> Cardholder response',cardHolder);
 
-    return {card,cardHolder};
+    const card:TCardResponse = await createCard(cardHolder.cardHolderAccount.id,externalId);
+    console.log('> Card response',card);
+
+    return [card,cardHolder];
 
 }
 
