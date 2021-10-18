@@ -67,3 +67,40 @@ For this scenario we have assembled the following layers that can be seen in the
 - **Application**:Application: This is where functionality really lives, application logic is included.
 - **Interface**: Here we put the communication layer between infrastructure and application.
 - **Infrastructure**: Here we put the part of the system that has contact with the outside, eg: BD, 3rd party libraries, integration with other services, configurations. The idea of ​​this layer is to be able to have contact with this layer through abstractions.
+
+### To use:
+Follow this steps to install the project
+
+#### Request card:
+Run the following curl to make a card retrieval.
+
+```console
+curl --location --request POST 'http://127.0.0.1:8080/card' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    "externalId":"1",
+    "icon":"mario"
+}'
+```
+
+#### Pause card:
+Run the following curl to make a card pause.
+
+```console
+curl --location --request PATCH 'http://127.0.0.1:8080/card/pause/1' \
+--header 'Content-Type: application/javascript' \
+--data-raw '{
+    "externalId":"1"
+}'
+```
+
+#### Activate card:
+Run the following curl to make a card reactivation.
+
+```console
+curl --location --request PATCH 'http://127.0.0.1:8080/card/enable/1' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    "externalId":"1"
+}'
+```
