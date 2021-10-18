@@ -1,3 +1,5 @@
+<img src="https://github.com/damiancipolat/node-bff/blob/master/doc/node.png?raw=true" width="150px" align="right" />
+
 # Real clean architecture api example
 An example of how to model and develop using clean architeture, to create a microservice to handle credit cards features from a fintech app, this is a learning exercice.
 
@@ -11,5 +13,14 @@ We will work as a base using the DDD methodology.
 - Typescript
 - Docoker
 - Postresql
+
+### Install:
+Follow this steps to install the project
+
+```console
+npm install
+docker-compose up -d
+npm start
+```
 
 
