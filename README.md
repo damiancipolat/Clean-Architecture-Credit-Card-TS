@@ -58,4 +58,5 @@ With this we can already assemble the first entities of our domain. You can take
 Once the domain has been analyzed, it is time to think about our layers, following the style of clean architecture, the layers look different from traditional configurations.
 
 For this scenario we have assembled the following layers that can be seen in the diagram.
+
 <img src="https://github.com/damiancipolat/Clean-Architecture-Credit-Card-TS/blob/main/doc/diagram_layers.png?raw=true" width="650px" />
