@@ -34,3 +34,18 @@ As a customer, I want to be able to pause my credit card so that I do not have c
 
 - **Feature 3 / card reactivation:**
 As a customer I want to be able to activate my previously paused credit card in order to continue making purchases.
+
+#### Data definition:
+We know that the data we handle on the card are the following:
+
+```console
+    id:string;
+    created_at:string;
+    reference:string;
+    since:date;
+    until:date;
+    client:client who request the card;
+    status:active/paused/inactive;
+    opExternal:Card provider metadata;
+    icon:string,'pig'
+```
