@@ -22,6 +22,8 @@ npm install
 docker-compose up -d
 npm start
 ```
+Run the script **/data/tables.sql** to create tables in the databas.
+
 ### Scenario:
 Before starting with software issues, following the principles of DDD, we must determine which will be our domain to solve.
 Let's imagine that we have several user stories that define the following behavior for us.
