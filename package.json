@@ -4,6 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "npm run build && node ./build/src/infraestructure/server/index.js ",
+    "build": "rm -rf ./build && tsc -p .",
     "start-dev": "ts-node-dev ./src/infraestructure/server/",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

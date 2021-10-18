@@ -6,13 +6,10 @@ import {TEnv} from '../config/types';
 // On server internal error.
 const onServerError = (): void => console.error({ message: `Server error` });
 
-//@ts-ignore
-import pkg from './../../../package.json';
-
 // On server start.
 const onListen = (port: TEnv): void => {
-  console.info(`Server ᕕ(ಠ‿ಠ)ᕗ - version ${pkg.version}`);
-  console.info(`${pkg.name}: - Running on port: ${port}`);
+  console.info(`Server ᕕ(ಠ‿ಠ)ᕗ - 1.0`);
+  console.info(`Card microservice: - Running on port: ${port}`);
 };
 
 // When the process receive kill signal.

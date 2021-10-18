@@ -1,9 +1,5 @@
-//@ts-ignore
-import pkg from './../../../package.json';
-
 const events = {
     info: {
-        onProcessKillMessage: `${pkg.name} termination signal received`,
         finishServer: 'Finishing server',
     }
 };
