@@ -50,6 +50,11 @@ We know that the data we handle on the card are the following:
     icon:string,'pig'
 ```
 #### Data definition:
-With this we can already assemble the first entities of our domain.
+With this we can already assemble the first entities of our domain. You can take look here **/src/domain/card.ts**.
 
 <img src="https://github.com/damiancipolat/Clean-Architecture-Credit-Card-TS/blob/main/doc/diagram_domain.png?raw=true" width="250px" />
+
+### Architecture:
+Once the domain has been analyzed, it is time to think about our layers, following the style of clean architecture, the layers look different from traditional configurations.
+
+<img src="https://github.com/damiancipolat/Clean-Architecture-Credit-Card-TS/blob/main/doc/diagram_layers.png?raw=true" width="350px" />
