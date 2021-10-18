@@ -7,7 +7,7 @@ import parseClient from './clientMapper';
 
 import bd from '../../bd/';
 
-const find:IFind<TClient>=async (id:string):Promise<TClient|null>=>{
+const find:IFind<TClient>=async (id:string):Promise<TClient>=>{
 
     const conex = bd();
     await conex.connect();
@@ -15,7 +15,10 @@ const find:IFind<TClient>=async (id:string):Promise<TClient|null>=>{
     const res:any = await conex.query('SELECT * from clients where id=$1;', [id]);
     conex.end();
 
-    return (res&&res.rows.length>0)?parseClient(res.rows[0]):null;
+    if (!(res&&res.rows.length>0))
+        throw new Error('Client not found:'+id);
+
+    return parseClient(res.rows[0]);
 
 }
 

@@ -27,6 +27,7 @@ type TConfig = {
 };
 
 export {
+    TEnv,
     TConfigDatabase,
     TConfigServer,
     TConfig,

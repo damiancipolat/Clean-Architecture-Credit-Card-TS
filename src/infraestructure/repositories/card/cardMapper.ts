@@ -21,7 +21,7 @@ const parseCard = async (dataSet:any):Promise<TCard>=>{
     const opExternal:TExternalCard={
         opCardHolderId:dataSet.op_cardholder_id,
         opCardId:dataSet.op_card_id,
-        opAffinityId:dataSet.op_affinty_id,
+        opAffinityId:dataSet.op_affinity_id,
         opIssuerId:dataSet.op_issuer_id
     };
 

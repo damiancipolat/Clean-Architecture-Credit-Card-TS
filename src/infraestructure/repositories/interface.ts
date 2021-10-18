@@ -3,7 +3,7 @@ interface ISave<T>{
 };
 
 interface IFind<T>{
-    (id:string):Promise<T|null>
+    (id:string):Promise<T>
 };
 
 interface IUpdate<T>{

@@ -25,7 +25,27 @@ const toEnum = (status:string):TCardStatus=>{
 
 }
 
+const toString = (status:TCardStatus):string=>{
+
+    switch(status){
+        case TCardStatus.created:
+            return '1';
+        case TCardStatus.active:
+            return '2';
+        case TCardStatus.paused:
+            return '3';
+        case TCardStatus.cancelated:
+            return '4';
+        case TCardStatus.pending:
+            return '5';
+        default:
+            return '0';
+    }
+
+}
+
 export {
     TCardStatus,
-    toEnum
+    toEnum,
+    toString
 };

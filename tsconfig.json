@@ -5,6 +5,7 @@
     "outDir": "./build",
     "rootDir": "./",
     "strict": true,
+    "esModuleInterop":true,
     "moduleResolution": "node",
     "baseUrl": "./"
   },
