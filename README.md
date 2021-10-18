@@ -52,4 +52,4 @@ We know that the data we handle on the card are the following:
 #### Data definition:
 With this we can already assemble the first entities of our domain.
 
-<img src="https://github.com/damiancipolat/Clean-Architecture-Credit-Card-TS/blob/main/doc/diagram_domain.png?raw=true" width="150px" />
+<img src="https://github.com/damiancipolat/Clean-Architecture-Credit-Card-TS/blob/main/doc/diagram_domain.png?raw=true" width="250px" />
