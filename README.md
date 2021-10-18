@@ -26,9 +26,9 @@ npm start
 Before starting with software issues, following the principles of DDD, we must determine which will be our domain to solve.
 Let's imagine that we have several user stories that define the following behavior for us.
 
-- **Feature 1 - Card request:**
+- **Feature 1 / card request:**
 As a customer I want to be able to request my credit card, indicating what customizable icon it will have.
-- **Feature 2 - Card pause:**
+- **Feature 2 / card pause:**
 As a customer, I want to be able to pause my credit card so that I do not have consumption.
-- **Feature 3 - Card reactivation:**
+- **Feature 3 / card reactivation:**
 As a customer I want to be able to activate my previously paused credit card in order to continue making purchases.
