@@ -1,13 +1,9 @@
 import TClient from './client';
 import TExternalCard from './externalCard';
 
-enum TCardStatus {
-    created=1,
-    active=2,
-    paused=3,
-    cancelated=4,
-    pending=5
-};
+import {
+    TCardStatus
+} from './cardStatus';
 
 type TCardDate={
     month:string;

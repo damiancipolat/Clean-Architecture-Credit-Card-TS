@@ -1,5 +1,5 @@
 interface ISave<T>{
-    (card:T):Promise<T>
+    (entity:T):Promise<T>
 };
 
 interface IFind<T>{
@@ -7,7 +7,7 @@ interface IFind<T>{
 };
 
 interface IUpdate<T>{
-    (card:T):Promise<T>
+    (entity:T):Promise<T>
 };
 
 export {

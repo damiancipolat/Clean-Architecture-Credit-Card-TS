@@ -7,16 +7,16 @@ import {
  * @param {number} string, format YYYYMMDD
  * @returns {TCardDate}
  */
-const create = (date:string):TCardDate=>{
+const createDate = (date:string):TCardDate=>{
 
-    if (!((date.length==6)||(date.length==8)))
-        throw new Error('Bad date format must be YYYYMMDD');
+    if (!((date.length==6)||(date.length==10)))
+        throw new Error('Bad date format must be YYYY-MM-DD');
 
     return {
         month:date.substring(0,4),
-        year:date.substring(4,6)
+        year:date.substring(5,7)
     };
 
 }
 
-export default create;
+export default createDate;

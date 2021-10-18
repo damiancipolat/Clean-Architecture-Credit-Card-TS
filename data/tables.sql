@@ -1,6 +1,14 @@
 drop table biz_card_status;
 drop table biz_cards;
 drop table biz_card_icon;
+drop table clients;
+
+create table clients(
+	id int4 NOT NULL GENERATED ALWAYS AS IDENTITY,
+    email varchar(100),
+    name varchar(100),
+    surname varchar(100)
+);
 
 create table biz_card_status
 (

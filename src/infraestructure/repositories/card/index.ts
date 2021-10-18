@@ -31,18 +31,17 @@ const find:IFind<TCard>=async (id:string):Promise<TCard|null>=>{
     const res:any = await conex.query('SELECT * from biz_cards where id=$1;', [id]);
     conex.end();
 
-    return (res&&res.rows.length>0)?parseCard(res[0]):null;
+    return (res&&res.rows.length>0)?await parseCard(res.rows[0]):null;
 
 }
 
+/*
 const update:IUpdate<TCard>=async (card:TCard):Promise<TCard>=>{
 
     let a:TCard;
     return Promise.resolve(a);
-}
+}*/
 
 export {
-    save,
-    find,
-    update
+    find
 };
