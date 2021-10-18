@@ -1,25 +1,35 @@
 //Include core banking.
 import {
-    ICardRequest
+    IActiveCard
 } from '../infraestructure/corebanking/interface';
 
 import {
-    TCard
+    TCard,
+    TCardStatus
 } from '../domain/card';
 
 //Include repository.
 import {
-    ISave,
+    IUpdate,
     IFind
 } from '../infraestructure/repositories/interface';
-        
-const requestCard = async (externalId:string,requestCard:ICardRequest,saveCard:ISave<TCard>,find:IFind<TCard>)=>{
 
-    const cardResult = await requestCard(externalId);
-    console.log('result card creation',cardResult);
+const activeCard = async (idcard:string,externalId:string,activeCard:IActiveCard,updateCard:IUpdate<TCard>,find:IFind<TCard>)=>{
 
-    return cardResult;
+  //Pause in core bankin.
+  await activeCard(idcard,externalId);
+
+  //Find the card in db.
+  let card:TCard = await find(idcard);
+  
+  //Change status.
+  card.status=TCardStatus.active;
+
+  //Update in db.
+  const updated:any = await updateCard(card);
+
+  return updated;
 
 }
 
-export default requestCard;
+export default activeCard;
