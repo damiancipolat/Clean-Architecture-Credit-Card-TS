@@ -110,6 +110,7 @@ curl --location --request PATCH 'http://127.0.0.1:8080/card/enable/1' \
 ## Readings:
 This is just the beginning, of a topic that is gigantic, I recommend that you review some of these links that I collect to put together this project.
 
+- https://www.youtube.com/watch?v=SPB9WknAB4E
 - https://franiglesias.github.io/ddd-way-domain/
 - https://medium.com/geekculture/thoughts-on-domain-driven-design-in-functional-languages-83c43ec518d
 - https://github.com/jbuget/nodejs-clean-architecture-app
